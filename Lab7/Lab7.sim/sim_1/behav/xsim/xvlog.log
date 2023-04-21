@@ -1,0 +1,60 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/counter_10_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_10_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/hsync_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsync_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab7_clks
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/mux_10v10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_10v10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/vga_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/vsync_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vsync_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog_movement_sm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog_movement_sm_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog_movement
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/multiplexer8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/ring_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ring_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module plant_movement1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module plant_movement2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module plant_movement3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/counter_2_sec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_2_sec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/time_counter_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_counter_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/collision_detection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module collision_detection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sim_1/new/frog_move_sm_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog_move_sm_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sim_1/new/test2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testSyncs
+INFO: [VRFC 10-311] analyzing module check_the_sync_signals
+INFO: [VRFC 10-311] analyzing module check_the_rgb_signals
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sim_1/new/hsync_counter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsync_vsync_counter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sim_1/new/frog_movement_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frog_movement_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sim_1/new/plant_mov_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module plant_mov_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sim_1/new/LFSR_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_test

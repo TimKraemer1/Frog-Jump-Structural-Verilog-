@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 24 00:58:42 2022
+# Process ID: 27376
+# Current directory: C:/Users/Tim Kraemer/Desktop/Lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3444 C:\Users\Tim Kraemer\Desktop\Lab7\Lab7.xpr
+# Log file: C:/Users/Tim Kraemer/Desktop/Lab7/vivado.log
+# Journal file: C:/Users/Tim Kraemer/Desktop/Lab7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+archive_project {C:/Users/Tim Kraemer/Desktop/Lab7.xpr.zip} -temp_dir {C:/Users/Tim Kraemer/Desktop/Lab7/.Xil/Vivado-27376-DESKTOP-VMP0KK8} -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Tim Kraemer/Desktop/Lab7/.Xil/Vivado-27376-DESKTOP-VMP0KK8' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

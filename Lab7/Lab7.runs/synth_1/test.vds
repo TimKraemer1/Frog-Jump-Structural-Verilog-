@@ -1,0 +1,784 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 22 14:07:41 2022
+# Process ID: 8616
+# Current directory: C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.runs/synth_1
+# Command line: vivado.exe -log test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test.tcl
+# Log file: C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.runs/synth_1/test.vds
+# Journal file: C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test.tcl -notrace
+Command: synth_design -top test -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25688 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 673.230 ; gain = 177.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'test' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/test.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/ring_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+WARNING: [Synth 8-7023] instance 'ff_2' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/ring_counter.v:13]
+WARNING: [Synth 8-7023] instance 'ff_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/ring_counter.v:14]
+WARNING: [Synth 8-7023] instance 'ff_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/ring_counter.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter' (2#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/ring_counter.v:3]
+WARNING: [Synth 8-7023] instance 'ring' of module 'ring_counter' has 4 connections declared, but only 3 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/test.v:30]
+INFO: [Synth 8-6157] synthesizing module 'selector' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/selector.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'selector' (3#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/selector.v:4]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/hex7seg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'multiplexer8' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/multiplexer8.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'multiplexer8' (4#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/multiplexer8.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (5#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/hex7seg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'lab7_clks' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:57]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (6#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 36.500000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (7#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (8#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (9#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:57]
+INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:190]
+INFO: [Synth 8-6157] synthesizing module 'CB4CE_MXILINX_clkcntrl4' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:306]
+INFO: [Synth 8-6157] synthesizing module 'FTCE_MXILINX_clkcntrl4' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:276]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'XOR2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81988]
+INFO: [Synth 8-6155] done synthesizing module 'XOR2' (10#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81988]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13448]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (11#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13448]
+INFO: [Synth 8-6155] done synthesizing module 'FTCE_MXILINX_clkcntrl4' (12#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:276]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:562]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (13#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:562]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:514]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (14#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:514]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (15#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81391]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (16#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81391]
+INFO: [Synth 8-6155] done synthesizing module 'CB4CE_MXILINX_clkcntrl4' (17#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:306]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (18#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+WARNING: [Synth 8-3848] Net qsec in module/entity clkcntrl4 does not have driver. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (19#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:190]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:40]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: float 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (20#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+INFO: [Synth 8-6155] done synthesizing module 'lab7_clks' (21#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/lab7_clks.v:24]
+WARNING: [Synth 8-7023] instance 'slowit' of module 'lab7_clks' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/test.v:47]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/vga_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hsync_counter' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/hsync_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counter_10_bit' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/counter_10_bit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux_10v10' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/mux_10v10.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux_10v10' (22#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/mux_10v10.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter_10_bit' (23#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/counter_10_bit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hsync_counter' (24#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/hsync_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vsync_counter' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/vsync_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vsync_counter' (25#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/vsync_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (26#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/vga_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Half_Second_Timer' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/Half_Second_Timer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'time_counter_8bit' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/time_counter_8bit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'time_counter_8bit' (27#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/time_counter_8bit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Half_Second_Timer' (28#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/Half_Second_Timer.v:3]
+WARNING: [Synth 8-7023] instance 'reset_frog_test_ff' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/test.v:58]
+INFO: [Synth 8-6157] synthesizing module 'frog_movement_sm' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'frog_movement_sm_logic' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm_logic.v:3]
+WARNING: [Synth 8-6104] Input port 'reset_timer' has an internal driver [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm_logic.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'frog_movement_sm_logic' (29#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm_logic.v:3]
+WARNING: [Synth 8-7023] instance 'IDLE_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:30]
+WARNING: [Synth 8-7023] instance 'UP1_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:31]
+WARNING: [Synth 8-7023] instance 'DW1_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:32]
+WARNING: [Synth 8-7023] instance 'DW2_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:33]
+WARNING: [Synth 8-7023] instance 'UP2_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:34]
+WARNING: [Synth 8-7023] instance 'START_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:35]
+WARNING: [Synth 8-7023] instance 'TIMER_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:36]
+WARNING: [Synth 8-7023] instance 'STOP_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'frog_movement_sm' (30#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement_sm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counter_2_sec' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/counter_2_sec.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter_2_sec' (31#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/counter_2_sec.v:3]
+INFO: [Synth 8-6157] synthesizing module 'frog_movement' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:3]
+WARNING: [Synth 8-7023] instance 'ff_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:21]
+WARNING: [Synth 8-7023] instance 'ff_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:22]
+WARNING: [Synth 8-7023] instance 'ff_2' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:23]
+WARNING: [Synth 8-7023] instance 'ff_3' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:24]
+WARNING: [Synth 8-7023] instance 'ff_4' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:25]
+WARNING: [Synth 8-7023] instance 'ff_5' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:26]
+WARNING: [Synth 8-7023] instance 'ff_6' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:27]
+WARNING: [Synth 8-7023] instance 'ff_7' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:28]
+WARNING: [Synth 8-7023] instance 'ff_8' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:29]
+WARNING: [Synth 8-7023] instance 'ff_9' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'frog_movement' (32#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/frog_movement.v:3]
+INFO: [Synth 8-6157] synthesizing module 'plant_movement1' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:3]
+WARNING: [Synth 8-7023] instance 'ff_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:20]
+WARNING: [Synth 8-7023] instance 'ff_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:21]
+WARNING: [Synth 8-7023] instance 'ff_2' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:22]
+WARNING: [Synth 8-7023] instance 'ff_3' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:23]
+WARNING: [Synth 8-7023] instance 'ff_4' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:24]
+WARNING: [Synth 8-7023] instance 'ff_5' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:25]
+WARNING: [Synth 8-7023] instance 'ff_6' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:26]
+WARNING: [Synth 8-7023] instance 'ff_7' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:27]
+WARNING: [Synth 8-7023] instance 'ff_8' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:28]
+WARNING: [Synth 8-7023] instance 'ff_9' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'plant_movement1' (33#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement.v:3]
+INFO: [Synth 8-6157] synthesizing module 'plant_movement2' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:3]
+WARNING: [Synth 8-7023] instance 'ff_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:21]
+WARNING: [Synth 8-7023] instance 'ff_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:22]
+WARNING: [Synth 8-7023] instance 'ff_2' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:23]
+WARNING: [Synth 8-7023] instance 'ff_3' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:24]
+WARNING: [Synth 8-7023] instance 'ff_4' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:25]
+WARNING: [Synth 8-7023] instance 'ff_5' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:26]
+WARNING: [Synth 8-7023] instance 'ff_6' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:27]
+WARNING: [Synth 8-7023] instance 'ff_7' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:28]
+WARNING: [Synth 8-7023] instance 'ff_8' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:29]
+WARNING: [Synth 8-7023] instance 'ff_9' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'plant_movement2' (34#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'plant_movement3' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:3]
+WARNING: [Synth 8-7023] instance 'ff_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:21]
+WARNING: [Synth 8-7023] instance 'ff_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:22]
+WARNING: [Synth 8-7023] instance 'ff_2' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:23]
+WARNING: [Synth 8-7023] instance 'ff_3' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:24]
+WARNING: [Synth 8-7023] instance 'ff_4' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:25]
+WARNING: [Synth 8-7023] instance 'ff_5' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:26]
+WARNING: [Synth 8-7023] instance 'ff_6' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:27]
+WARNING: [Synth 8-7023] instance 'ff_7' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:28]
+WARNING: [Synth 8-7023] instance 'ff_8' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:29]
+WARNING: [Synth 8-7023] instance 'ff_9' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'plant_movement3' (35#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/plant_movement3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LFSR' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:3]
+WARNING: [Synth 8-7023] instance 'ff_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:17]
+WARNING: [Synth 8-7023] instance 'ff_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:18]
+WARNING: [Synth 8-7023] instance 'ff_2' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:19]
+WARNING: [Synth 8-7023] instance 'ff_3' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:20]
+WARNING: [Synth 8-7023] instance 'ff_4' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:21]
+WARNING: [Synth 8-7023] instance 'ff_5' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:22]
+WARNING: [Synth 8-7023] instance 'ff_6' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:23]
+WARNING: [Synth 8-7023] instance 'ff_7' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:24]
+WARNING: [Synth 8-7023] instance 'ff_sel_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:27]
+WARNING: [Synth 8-7023] instance 'ff_sel_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:28]
+WARNING: [Synth 8-7023] instance 'ff_sel_2' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:29]
+WARNING: [Synth 8-7023] instance 'ff_sel_3' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:30]
+WARNING: [Synth 8-7023] instance 'ff_sel_4' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:31]
+WARNING: [Synth 8-7023] instance 'ff_sel_5' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:32]
+WARNING: [Synth 8-7023] instance 'ff_sel_6' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:33]
+WARNING: [Synth 8-7023] instance 'ff_sel_7' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR' (36#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/imports/new/LFSR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'score_counter' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/score_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'score_counter' (37#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/score_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'collision_detection' [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/collision_detection.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'collision_detection' (38#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/collision_detection.v:3]
+WARNING: [Synth 8-3848] Net led in module/entity test does not have driver. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/test.v:15]
+WARNING: [Synth 8-3848] Net reset_timer in module/entity test does not have driver. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/test.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'test' (39#1) [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/sources_1/new/test.v:3]
+WARNING: [Synth 8-3331] design counter_2_sec has unconnected port ResetTimer
+WARNING: [Synth 8-3331] design frog_movement_sm_logic has unconnected port btnL
+WARNING: [Synth 8-3331] design Half_Second_Timer has unconnected port reset
+WARNING: [Synth 8-3331] design clkcntrl4 has unconnected port qsec
+WARNING: [Synth 8-3331] design test has unconnected port led[15]
+WARNING: [Synth 8-3331] design test has unconnected port led[14]
+WARNING: [Synth 8-3331] design test has unconnected port led[13]
+WARNING: [Synth 8-3331] design test has unconnected port led[12]
+WARNING: [Synth 8-3331] design test has unconnected port led[11]
+WARNING: [Synth 8-3331] design test has unconnected port led[10]
+WARNING: [Synth 8-3331] design test has unconnected port led[9]
+WARNING: [Synth 8-3331] design test has unconnected port led[8]
+WARNING: [Synth 8-3331] design test has unconnected port led[7]
+WARNING: [Synth 8-3331] design test has unconnected port led[6]
+WARNING: [Synth 8-3331] design test has unconnected port led[5]
+WARNING: [Synth 8-3331] design test has unconnected port led[4]
+WARNING: [Synth 8-3331] design test has unconnected port led[3]
+WARNING: [Synth 8-3331] design test has unconnected port led[2]
+WARNING: [Synth 8-3331] design test has unconnected port led[1]
+WARNING: [Synth 8-3331] design test has unconnected port led[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 738.629 ; gain = 242.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 738.629 ; gain = 242.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 738.629 ; gain = 242.410
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 870.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  AND2 => LUT2: 12 instances
+  AND3 => LUT3: 6 instances
+  AND4 => LUT4: 6 instances
+  BUF => LUT1: 1 instances
+  XOR2 => LUT2: 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 870.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 870.359 ; gain = 374.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 870.359 ; gain = 374.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 870.359 ; gain = 374.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 870.359 ; gain = 374.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 13    
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 10    
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 7     
+	   2 Input      9 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter_10_bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+Module time_counter_8bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module frog_movement 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+Module plant_movement1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module plant_movement2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module plant_movement3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module LFSR 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
+Module score_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design frog_movement_sm has unconnected port btnL
+WARNING: [Synth 8-3331] design test has unconnected port led[15]
+WARNING: [Synth 8-3331] design test has unconnected port led[14]
+WARNING: [Synth 8-3331] design test has unconnected port led[13]
+WARNING: [Synth 8-3331] design test has unconnected port led[12]
+WARNING: [Synth 8-3331] design test has unconnected port led[11]
+WARNING: [Synth 8-3331] design test has unconnected port led[10]
+WARNING: [Synth 8-3331] design test has unconnected port led[9]
+WARNING: [Synth 8-3331] design test has unconnected port led[8]
+WARNING: [Synth 8-3331] design test has unconnected port led[7]
+WARNING: [Synth 8-3331] design test has unconnected port led[6]
+WARNING: [Synth 8-3331] design test has unconnected port led[5]
+WARNING: [Synth 8-3331] design test has unconnected port led[4]
+WARNING: [Synth 8-3331] design test has unconnected port led[3]
+WARNING: [Synth 8-3331] design test has unconnected port led[2]
+WARNING: [Synth 8-3331] design test has unconnected port led[1]
+WARNING: [Synth 8-3331] design test has unconnected port led[0]
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_37/I_Q0/I_36_35) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_37/I_Q1/I_36_35) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_37/I_Q2/I_36_35) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_37/I_Q3/I_36_35) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_44/I_Q0/I_36_35) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_44/I_Q1/I_36_35) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_44/I_Q2/I_36_35) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_44/I_Q3/I_36_35) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (halfsectime/timer_counter_1/ff_6) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (halfsectime/timer_counter_1/ff_7) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (timer/timer_counter_1/ff_7) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant1/ff_sel_3) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant1/ff_sel_4) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant1/ff_sel_5) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant1/ff_sel_6) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant1/ff_sel_7) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant2/ff_sel_3) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant2/ff_sel_4) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant2/ff_sel_5) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant2/ff_sel_6) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant2/ff_sel_7) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant3/ff_sel_3) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant3/ff_sel_4) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant3/ff_sel_5) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant3/ff_sel_6) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (random_plant3/ff_sel_7) is unused and will be removed from module test.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 870.359 ; gain = 374.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 870.359 ; gain = 374.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 889.535 ; gain = 393.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 889.535 ; gain = 393.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 901.887 ; gain = 405.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 901.887 ; gain = 405.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 901.887 ; gain = 405.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 901.887 ; gain = 405.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 901.887 ; gain = 405.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 901.887 ; gain = 405.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2       |     8|
+|2     |AND3       |     4|
+|3     |AND4       |     4|
+|4     |BUF        |     1|
+|5     |BUFG       |     3|
+|6     |CARRY4     |    77|
+|7     |LUT1       |     2|
+|8     |LUT2       |   144|
+|9     |LUT3       |    58|
+|10    |LUT4       |   204|
+|11    |LUT5       |    67|
+|12    |LUT6       |   102|
+|13    |MMCME2_ADV |     1|
+|14    |STARTUPE2  |     1|
+|15    |XOR2       |    16|
+|16    |FDCE       |    16|
+|17    |FDRE       |   135|
+|18    |IBUF       |     5|
+|19    |OBUF       |    25|
+|20    |OBUFT      |    16|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------------+------+
+|      |Instance            |Module                    |Cells |
++------+--------------------+--------------------------+------+
+|1     |top                 |                          |   889|
+|2     |  controller1       |vga_controller            |   174|
+|3     |    hor_counter     |hsync_counter             |    70|
+|4     |      counter1      |counter_10_bit_21         |    70|
+|5     |    ver_counter     |vsync_counter             |   104|
+|6     |      counter2      |counter_10_bit            |   104|
+|7     |  detect            |collision_detection       |    27|
+|8     |  frog_brain        |frog_movement_sm          |    32|
+|9     |  frog_movement     |frog_movement             |   137|
+|10    |  halfsectime       |Half_Second_Timer         |    14|
+|11    |    timer_counter_1 |time_counter_8bit_20      |    14|
+|12    |  plant_movement1   |plant_movement1           |    95|
+|13    |  plant_movement2   |plant_movement2           |    92|
+|14    |  plant_movement3   |plant_movement3           |    93|
+|15    |  random_plant1     |LFSR                      |    21|
+|16    |  random_plant2     |LFSR_0                    |    21|
+|17    |  random_plant3     |LFSR_1                    |    21|
+|18    |  ring              |ring_counter              |    23|
+|19    |  score             |score_counter             |    20|
+|20    |  slowit            |lab7_clks                 |    55|
+|21    |    my_clk_inst     |clk_wiz_0                 |     4|
+|22    |    slowclk         |clkcntrl4                 |    50|
+|23    |      XLXI_38       |CB4CE_MXILINX_clkcntrl4   |    12|
+|24    |        I_Q0        |FTCE_MXILINX_clkcntrl4_16 |     2|
+|25    |        I_Q1        |FTCE_MXILINX_clkcntrl4_17 |     2|
+|26    |        I_Q2        |FTCE_MXILINX_clkcntrl4_18 |     2|
+|27    |        I_Q3        |FTCE_MXILINX_clkcntrl4_19 |     2|
+|28    |      XLXI_39       |CB4CE_MXILINX_clkcntrl4_2 |    12|
+|29    |        I_Q0        |FTCE_MXILINX_clkcntrl4_12 |     2|
+|30    |        I_Q1        |FTCE_MXILINX_clkcntrl4_13 |     2|
+|31    |        I_Q2        |FTCE_MXILINX_clkcntrl4_14 |     2|
+|32    |        I_Q3        |FTCE_MXILINX_clkcntrl4_15 |     2|
+|33    |      XLXI_40       |CB4CE_MXILINX_clkcntrl4_3 |    12|
+|34    |        I_Q0        |FTCE_MXILINX_clkcntrl4_8  |     2|
+|35    |        I_Q1        |FTCE_MXILINX_clkcntrl4_9  |     2|
+|36    |        I_Q2        |FTCE_MXILINX_clkcntrl4_10 |     2|
+|37    |        I_Q3        |FTCE_MXILINX_clkcntrl4_11 |     2|
+|38    |      XLXI_45       |CB4CE_MXILINX_clkcntrl4_4 |    12|
+|39    |        I_Q0        |FTCE_MXILINX_clkcntrl4    |     2|
+|40    |        I_Q1        |FTCE_MXILINX_clkcntrl4_5  |     2|
+|41    |        I_Q2        |FTCE_MXILINX_clkcntrl4_6  |     2|
+|42    |        I_Q3        |FTCE_MXILINX_clkcntrl4_7  |     2|
+|43    |  timer             |counter_2_sec             |    18|
+|44    |    timer_counter_1 |time_counter_8bit         |    18|
++------+--------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 901.887 ; gain = 405.668
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 901.887 ; gain = 273.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 901.887 ; gain = 405.668
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 4 instances
+  AND4 => LUT4: 4 instances
+  BUF => LUT1: 1 instances
+  XOR2 => LUT2: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+95 Infos, 172 Warnings, 34 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 901.887 ; gain = 611.340
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.887 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Tim Kraemer/Desktop/Lab7/Lab7.runs/synth_1/test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_utilization_synth.rpt -pb test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 22 14:08:18 2022...
